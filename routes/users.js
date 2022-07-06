@@ -80,7 +80,7 @@ router.post("/creacliente", (req, res) => {
             res.status(500).json('Tu edad no concuerda con tu fecha de nacimiento.');
         }
     }else
-        res.status(500).json('Formato de fecha de nacimiento equivocado.');
+        res.status(500).json('Formato de fecha de nacimiento equivocado, formato esperado (aaaa-mm-dd).');
 });
 
 function true_age(fecha_nacimiento, edad){
